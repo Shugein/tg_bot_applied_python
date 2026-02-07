@@ -2,3 +2,4 @@ aiogram==3.*
 aiohttp
 pydantic_settings
 python-dotenv
+openai  # Для LLM через OpenRouter (совместимый с OpenAI API)
