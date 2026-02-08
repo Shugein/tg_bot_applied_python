@@ -1,6 +1,19 @@
 # Health Tracking Bot
 
 Telegram-бот для отслеживания здоровья и фитнеса.
+(для написания этого бота я вайбкодил, чтобы получить готовый шаблон для работы с данными и ускорить процесс)
+(вайбкодил я аккуратно, в режиме обучения, чтобы все усвоить и понять архитектурные патерны)
+
+## Скрины
+
+<img width="816" height="865" alt="image" src="https://github.com/user-attachments/assets/9eb2e1f3-621a-4527-96f6-af0bf2ba38c4" />
+
+
+<img width="795" height="720" alt="image" src="https://github.com/user-attachments/assets/566b59d4-2b83-4bed-bc5e-55773d7ce78f" />
+
+
+<img width="787" height="151" alt="image" src="https://github.com/user-attachments/assets/7ec89b78-301b-4544-affb-5add749faab0" />
+
 
 ## Возможности
 
