@@ -2,10 +2,9 @@ from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
 
-from storage.user_storage import UserStorage
+from storage.instance import storage
 
 router = Router()
-storage = UserStorage()
 
 
 @router.message(Command("log_water"))

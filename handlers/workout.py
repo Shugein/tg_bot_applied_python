@@ -2,11 +2,10 @@ from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
 
-from storage.user_storage import UserStorage
+from storage.instance import storage
 from services.calculator import HealthCalculator
 
 router = Router()
-storage = UserStorage()
 
 
 @router.message(Command("log_workout"))

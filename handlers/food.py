@@ -3,14 +3,13 @@ from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, C
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 
-from storage.user_storage import UserStorage
+from storage.instance import storage
 from states import FoodLogging
 from services.food_api import FoodAPIClient
 from services.llm_calories import LLMCalorieEstimator
 from settings import settings
 
 router = Router()
-storage = UserStorage()
 food_api = FoodAPIClient()
 llm_estimator = LLMCalorieEstimator(settings.LLM_API_KEY)
 

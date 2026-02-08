@@ -2,16 +2,11 @@ from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
 
-from storage.user_storage import UserStorage
+from storage.instance import storage
 
 # Создаём Router для этого модуля
 # Каждый handler file имеет свой router
 router = Router()
-
-# Singleton instance storage (создаётся один раз при импорте модуля)
-# Это простой паттерн для небольших ботов
-# Для больших приложений лучше использовать Dependency Injection
-storage = UserStorage()
 
 
 @router.message(Command("check_progress"))

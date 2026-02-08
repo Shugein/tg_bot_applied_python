@@ -3,7 +3,7 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 
-from storage.user_storage import UserStorage
+from storage.instance import storage
 from storage.models import UserProfile
 from states import ProfileSetup
 from services.calculator import HealthCalculator
@@ -11,7 +11,6 @@ from services.weather_api import WeatherAPIClient
 from settings import settings
 
 router = Router()
-storage = UserStorage()
 weather_api = WeatherAPIClient(settings.OPENWEATHER_API_KEY)
 
 

@@ -1,10 +1,9 @@
-version: '3.8'
-
 services:
   bot:
     build: .
     container_name: health_tracker_bot
     restart: unless-stopped
+    network_mode: host
 
     # Переменные окружения из .env файла
     env_file:
